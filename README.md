@@ -1,7 +1,7 @@
-hexbright custom firmware - https://github.com/emc2cube/hexbright
+hexbright custom firmwares
 =========
 
-Custom firmware for hexbright flashlights http://www.hexbright.com 
+Custom firmwares for hexbright flashlights http://www.hexbright.com 
 New firmwares will require the hexbright library. See https://github.com/dhiltonp/hexbright for installation instruction and on how to upload custom firmwares to your hexbright.
 Easy install: fork this repository as "hexbright-emc2cube" inside your local copy (or fork) of "dhiltonp/hexbright"
 
