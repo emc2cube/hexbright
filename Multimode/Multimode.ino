@@ -34,7 +34,7 @@
 
 // State
 hexbright hb;
-byte mode;// = MODE_OFF;
+byte mode = MODE_OFF;
 char brightness_direction = -1;
 
 // Morse Code: message
@@ -90,7 +90,8 @@ void setup()
 void loop()
 {
   hb.update();
-  hb.print_charge(GLED);
+//  hb.print_charge(GLED);
+  hb.print_power();
   static unsigned long lastTapTime, go_off;
   unsigned long time = millis();
 
@@ -144,7 +145,7 @@ void loop()
       else
       {
         Serial.println("Mode = med");
-        hb.set_light(CURRENT_LEVEL, 500, NOW);
+        hb.set_light(CURRENT_LEVEL, MAX_LOW_LEVEL, NOW);
         mode = MODE_MED;
       }
     }
